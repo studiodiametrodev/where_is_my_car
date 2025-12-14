@@ -327,7 +327,8 @@
             const blob = new Blob([swCode], { type: 'application/javascript' });
             const swUrl = URL.createObjectURL(blob);
             
-            navigator.serviceWorker.register(swUrl);
+            //navigator.serviceWorker.register(swUrl);
+            navigator.serviceWorker.register('./sw.js');
         }
 
         function showStatus(message, type) {
